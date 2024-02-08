@@ -3,6 +3,7 @@ ARG PG_MAJOR_VERSION=15
 ARG VERSION=custom
 
 FROM golang:1.20
+LABEL org.opencontainers.image.source="https://github.com/kimotodev/postgres-flex"
 
 WORKDIR /go/src/github.com/fly-apps/fly-postgres
 COPY . .
