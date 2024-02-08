@@ -41,7 +41,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            kimotodev/postgres-flex:15
-            kimotodev/postgres-flex:15.3
+            ghcr.io/kimotodev/postgres-flex:15
+            ghcr.io/kimotodev/postgres-flex:15.3
       - name: Postgres 15 Image digest
         run: echo ${{ steps.docker_build_15.outputs.digest }}
